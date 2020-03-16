@@ -16,7 +16,7 @@ The data is initially inspected in the initial_data_analysis file, however it is
 This initial data analysis is important to review, since in my opinion every Neural Network project is 80% data preparation, and 20% Neural Network fun. Therefore, one should fully understand the dataset they are working with before going on to feed it to a neural network.
 Ultimately we are trying to classify the following types of images:
 
-![Image of MNIST data](/images/Fashion MNIST_screenshot_03.03.2020.png)
+![Image of MNIST data](/images/Dataset_View.png)
 
 ### Training and Prediction
 
