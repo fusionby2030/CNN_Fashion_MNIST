@@ -8,11 +8,11 @@ from keras.datasets import fashion_mnist #https://keras.io/datasets/
 
 import numpy as np #for linear algebra
 
-
-
 #To see what dimensions I am working with:
+print("Dimension of training input and output")
 print(train_X.shape, train_Y.shape)
 #(60000, 28, 28), (60000,)
+print("Dimensions of test input and output")
 print(test_X.shape, test_Y.shape)
 #(10000, 28, 28), (10000,)
 """
@@ -21,10 +21,11 @@ and the test data is 10000 samples with the same dimensions
 
 Next we find the number of unique labels in the output using numpy
 """
+print("Unique labels to classify and total number of unique lables ")
 print(np.unique(train_Y), len(np.unique(train_Y)))
 #(array([0,1,2,3,4,5,6,7,8,9]), 10)
 """
-So there are 10 total output labels ranging from 0 - 9
+There are 10 total output labels ranging from 0 - 9
 Now we want to reshape the images into a matrix of 28x28x1 to feed the CNN
 and then normalize the data into a float format ranging from 0-1.
 """

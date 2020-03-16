@@ -3,6 +3,7 @@ from keras.models import load_model
 from keras.datasets import fashion_mnist
 from keras import backend as K
 from keras.utils import np_utils
+from sklearn.metrics import classification_report
 # load model
 model = load_model('model.h5')
 # summarize model.
@@ -33,3 +34,6 @@ labelNames = ["top", "trouser", "pullover", "dress", "coat",
 	"sandal", "shirt", "sneaker", "bag", "ankle boot"]
 
 print("%s: %.2f%%" % (model.metrics_names[1], score[1]*100))
+preds = model.predict(testX)
+print(classification_report(testY.argmax(axis=1), preds.argmax(axis=1),
+	target_names=labelNames))
