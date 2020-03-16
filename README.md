@@ -29,3 +29,13 @@ This file also will output the accuracy and loss of the neural network over time
 
 After training through the running of fashion_mnist.py, the model will be saved to a file called fashion_model.h5py which is not included in this repository, but will be needed to run the evaluation file fashion_mnist_loaded.py
 This in the end will output the overall accuracy of the model after training, and also the sklearn metrics. To learn more about the metrics output and why they can be usefull to know, see [here](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html#sklearn.metrics.precision_recall_fscore_support).
+
+## Environment Setup
+The following libraries are used in this project:
+To install simply create a virtual environment:
+#### Linux  
+`python3 -m venv /path/to/new/virtual/environment`
+#### Windows
+`c:\>c:\Python35\python -m venv c:\path\to\myenv`
+Then install the needed libraries:
+`pip install -r requirements.txt`
