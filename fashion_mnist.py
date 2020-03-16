@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report #A nice output of the reports 
 from keras.optimizers import SGD #A type of optimizer
 from keras.datasets import fashion_mnist #This is the data set for images
 from keras.utils import np_utils #For converting to a binary classification vector
-from keras.models import model_from_json 
+from keras.models import model_from_json
 from keras import backend as K
 from imutils import build_montages
 import matplotlib.pyplot as plt
